@@ -36,7 +36,7 @@ function OnCognitoAuthenticateUser() {
             AWS.config.region = 'ap-northeast-1';
 
             AWS.config.credentials = new AWS.CognitoIdentityCredentials({
-                IdentityPoolId: 'ap-northeast-1:XXXXXXXXXXXXXXXXXX', // your identity pool id here
+                IdentityPoolId: 'ap-northeast-1:fd8eaf57-29b9-4b20-9b4a-536f8ebe99ac', // your identity pool id here
                 Logins: {
                     // Change the key below according to the specific region your user pool is in.
                     'cognito-idp.ap-northeast-1.amazonaws.com/ap-northeast-1_XXXXXXXXX': result
