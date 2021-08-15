@@ -2,30 +2,73 @@
 <html>
 <head>
   <meta charset="UTF-8"></meta>
-	<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
-  <title>Ouraidログインページ</title>
+  <title>CognitoAuthenticateUser</title>
   <script src="../js/aws-sdk.min.js"></script>
   <script src="../js/aws-cognito-sdk.min.js"></script>
   <script src="../js/amazon-cognito-identity.min.js"></script>
   <script src="../js/signin.js"></script>
-	<link rel="stylesheet" href="../css/signin.css">
+	
+	    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="../css/themify-icons.css">
+    <link rel="stylesheet" href="../vendors/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="../vendors/animate-css/animate.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
 	
 </head>
-<body class="text-center">
-	  <main class="form-signin">
-		     <img class="mb-4" src="../img/Ouraidlogo.png" alt="" width="300" height="180" loading="lazy">
-      <h1 class="h3 mb-3 fw-normal">サインインをどうぞ</h1>
-		  
-		    <div class="form-floating">
-        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-        <label for="floatingInput">Emailアドレス</label>
-      </div>
-      <div class="form-floating">
-        <input type="password" class="form-control" id="floatingPassword" placeholder="パスワード">
-        <label for="floatingPassword">パスワード</label>
-      </div>
-		  
-		  
+<body>
+	    <header class="header_area">	
+        <div class="main_menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav menu_nav ml-auto">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> 
+                            <li class="nav-item"><a class="nav-link" href="feature.html">Ouraidについて</a></li> 
+                            <li class="nav-item"><a class="nav-link" href="price.html">克服に向けて</a></li>     
+                            <li class="nav-item submenu dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="feature.html">Features</a></li> 
+                                    <li class="nav-item"><a class="nav-link" href="price.html">Price</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="element.html">Element</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item submenu dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">克服情報</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="blog.html">克服に向けて</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="single-blog.html">薬物療法</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="single-blog.html">心理療法</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="single-blog.html">病院について</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="single-blog.html">認知行動療法</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="single-blog.html">リラクゼーション法</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="single-blog.html">マインドフルネス</a></li>
+                                </ul>
+                            </li> 
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="right-button">
+                        <ul>
+                           <!-- <li class="shop-icon"><a href="#"><i class="ti-shopping-cart-full"></i><span>0</span></a></li>-->
+                            <li><a class="sign_up" href="Signin/Signin.html">ログイン</a></li>
+                        </ul>
+                    </div> 
+                </div>
+            </nav>
+        </div>
+    </header>
   <h1>CognitoAuthenticateUser</h1>
   <span style="display: inline-block; width: 100px;">Email</span>
   <input type="text" id="email" placeholder="Email Address">
@@ -33,8 +76,6 @@
   <span style="display: inline-block; width: 100px;">Password</span>
   <input type="password" id="password" placeholder="Password">
   <br/><br/>
-  <input type="button" value="ログイン" onclick="OnCognitoAuthenticateUser();">
-		  
-	</main>
+  <input type="button" value="CognitoAuthenticateUser" onclick="OnCognitoAuthenticateUser();">
 </body>
 </html>
