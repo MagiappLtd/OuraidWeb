@@ -2,13 +2,30 @@
 <html>
 <head>
   <meta charset="UTF-8"></meta>
-  <title>CognitoAuthenticateUser</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+  <title>Ouraidログインページ</title>
   <script src="../js/aws-sdk.min.js"></script>
   <script src="../js/aws-cognito-sdk.min.js"></script>
   <script src="../js/amazon-cognito-identity.min.js"></script>
   <script src="../js/signin.js"></script>
+	<link rel="stylesheet" href="../css/signin.css">
+	
 </head>
-<body>
+<body class="text-center">
+	  <main class="form-signin">
+		     <img class="mb-4" src="../img/Ouraidlogo.png" alt="" width="300" height="180" loading="lazy">
+      <h1 class="h3 mb-3 fw-normal">サインインをどうぞ</h1>
+		  
+		    <div class="form-floating">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Emailアドレス</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="パスワード">
+        <label for="floatingPassword">パスワード</label>
+      </div>
+		  
+		  
   <h1>CognitoAuthenticateUser</h1>
   <span style="display: inline-block; width: 100px;">Email</span>
   <input type="text" id="email" placeholder="Email Address">
@@ -16,6 +33,8 @@
   <span style="display: inline-block; width: 100px;">Password</span>
   <input type="password" id="password" placeholder="Password">
   <br/><br/>
-  <input type="button" value="CognitoAuthenticateUser" onclick="OnCognitoAuthenticateUser();">
+  <input type="button" value="ログイン" onclick="OnCognitoAuthenticateUser();">
+		  
+	</main>
 </body>
 </html>
