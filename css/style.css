@@ -224,7 +224,7 @@ ul {
     top: -70px;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.8);
+    background: #AEAEAE;
     transform: translateY(70px);
     transition: transform 500ms ease, background 500ms ease;
     -webkit-transition: transform 500ms ease, background 500ms ease;
