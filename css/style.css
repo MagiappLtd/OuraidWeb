@@ -334,12 +334,12 @@ ul {
 .home_banner_area {
   position: relative;
   z-index: 1;
-  min-height: 900px; }
+  min-height: 500px; }
   .home_banner_area .banner_inner {
     position: relative;
     overflow: hidden;
     width: 100%;
-    min-height: 900px; }
+    min-height: 500px; }
     .home_banner_area .banner_inner .overlay {
       background: url(../img/banner/home-banner.jpg) no-repeat scroll center center;
       position: absolute;
