@@ -145,7 +145,7 @@ ul {
       .header_area .navbar .nav .nav-item .nav-link {
         font: 400 12px/80px "Poppins", sans-serif;
         text-transform: capitalize;
-        color: #fff;
+        color: #AEAEAE;
         padding: 0px;
         display: inline-block;
         font-size: 14px; }
@@ -161,7 +161,7 @@ ul {
           border-radius: 0px;
           box-shadow: none;
           margin: 0px;
-          background: #fff;
+          background: #AEAEAE;
           box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1); }
           @media (min-width: 992px) {
             .header_area .navbar .nav .nav-item.submenu ul {
@@ -199,7 +199,7 @@ ul {
             transition: all 0.4s linear; }
             .header_area .navbar .nav .nav-item.submenu ul .nav-item .nav-link {
               line-height: 45px;
-              color: #1d1d1d;
+              color: #AEAEAE;
               padding: 0px 30px;
               transition: all 150ms linear;
               display: block;
