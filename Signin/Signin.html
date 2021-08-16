@@ -1,98 +1,33 @@
-
-	<!doctype html>
-<html lang="jp">
+<!DOCTYPE html>
+<html>
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	
-	  <script src="../js/aws-sdk.min.js"></script>
+  <meta charset="UTF-8"></meta>
+  <title>CognitoAuthenticateUser</title>
+  <script src="../js/aws-sdk.min.js"></script>
   <script src="../js/aws-cognito-sdk.min.js"></script>
   <script src="../js/amazon-cognito-identity.min.js"></script>
   <script src="../js/signin.js"></script>
-	
-	
-    <link rel="icon" href="img/favicon.png" type="image/png">
-    <title>Ouraid</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/themify-icons.css">
-    <link rel="stylesheet" href="../vendors/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="../vendors/owl-carousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="../vendors/animate-css/animate.css">
-    <!-- main css -->
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/responsive.css">
+	    <link rel="stylesheet" href="../css/signin.css">
+<script>
+	 $("#login-button").click(function(event){
+     event.preventDefault();
+   
+   $('form').fadeOut(500);
+   $('.wrapper').addClass('form-success');
+});
+	</script>
 </head>
-	
-	
-
 <body>
-	
-	
-    <!--================Header Menu Area =================-->
-    <header class="header_area">	
-        <div class="main_menu">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav menu_nav ml-auto">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> 
-                            <li class="nav-item"><a class="nav-link" href="feature.html">Ouraidについて</a></li> 
-                            <li class="nav-item"><a class="nav-link" href="price.html">克服に向けて</a></li>     
-                            <li class="nav-item submenu dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="feature.html">Features</a></li> 
-                                    <li class="nav-item"><a class="nav-link" href="price.html">Price</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="element.html">Element</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item submenu dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">克服情報</a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="blog.html">克服に向けて</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="single-blog.html">薬物療法</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="single-blog.html">心理療法</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="single-blog.html">病院について</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="single-blog.html">認知行動療法</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="single-blog.html">リラクゼーション法</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="single-blog.html">マインドフルネス</a></li>
-                                </ul>
-                            </li> 
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="right-button">
-                        <ul>
-                        </ul>
-                    </div> 
-                </div>
-            </nav>
-        </div>
-    </header>
-    <!--================Header Menu Area =================-->
-
-    <!--================Home Banner Area =================-->
-    <section class="home_banner_area">
-        <div class="banner_inner d-flex align-items-center">
-            <div class="overlay"></div>
-            <div class="container">
-
-            </div>
-        </div>
-    </section>
-    <!--================End Home Banner Area =================-->
-	
-	
+	<header>
+    <h1>
+        <a href="/">RICO NOTES</a>
+    </h1>
+    <nav class="pc-nav">
+    </nav>
+</header>
+	<br><br><br><br><br><br>
+<!--
+	<div class="centerMiddle">
   <h1>CognitoAuthenticateUser</h1>
   <span style="display: inline-block; width: 100px;">Email</span>
   <input type="text" id="email" placeholder="Email Address">
@@ -101,22 +36,35 @@
   <input type="password" id="password" placeholder="Password">
   <br/><br/>
   <input type="button" value="CognitoAuthenticateUser" onclick="OnCognitoAuthenticateUser();">
+	</div>
+-->
 	
-	
-	
-	<script src="../js/jquery-2.2.4.min.js"></script>
-<script src="../js/popper.js"></script>
-<script src="../js/bootstrap.min.js"></script>
-<script src="../vendors/owl-carousel/owl.carousel.min.js"></script>
-<script src="../js/jquery.ajaxchimp.min.js"></script>
-<script src="../js/waypoints.min.js"></script>
-<script src="../js/mail-script.js"></script>
-<script src="../js/contact.js"></script>
-<script src="../js/jquery.form.js"></script>
-<script src="../js/jquery.validate.min.js"></script>
-<script src="../js/mail-script.js"></script>
-<script src="../js/theme.js"></script>
-	
-	
+	<div class="wrapper">
+  <div class="container">
+    <h1>Welcome</h1>
+    
+    <form class="form">
+  <input type="text" id="email" placeholder="Email Address">
+  <input type="password" id="password" placeholder="Password">
+		  <input type="button" id="login-button" value="ログイン" onclick="OnCognitoAuthenticateUser();">
+
+    </form>
+  </div>
+  
+  <ul class="bg-bubbles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>
+
+
 </body>
 </html>
