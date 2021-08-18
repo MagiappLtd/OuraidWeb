@@ -45,7 +45,7 @@ var getUserAttribute = function(){
                     for (i = 0; i < result.length; i++) {
                         currentUserData[result[i].getName()] = result[i].getValue();
                     }
-                    $("div#menu h1").text("ようこそ！" + currentUserData["family_name"] + "さん");
+                    $("div#menu h1").text("ようこそ！" + currentUserData["UserName"] + "さん");
                 });
             }
         });
