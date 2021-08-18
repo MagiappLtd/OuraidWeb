@@ -88,11 +88,11 @@
 		margin-bottom: 23px;
 	}
 	.header_area .navbar {
-		background: #000;
+		background: #fff;
 	}
 
 	.navbar_fixed.header_area .navbar {
-		background: rgba(0,0,0,0.7);
+		background: #fff;
 	}
 	.navbar-toggler[aria-expanded="false"] span:nth-child(2) {
 		opacity: 1;
