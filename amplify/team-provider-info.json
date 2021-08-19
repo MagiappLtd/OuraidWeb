@@ -10,6 +10,11 @@
       "StackName": "amplify-ouraidweb-dev-174245",
       "StackId": "arn:aws:cloudformation:ap-northeast-1:133567095445:stack/amplify-ouraidweb-dev-174245/6ea31210-00c9-11ec-a5a8-0a418189f47b",
       "AmplifyAppId": "d4pnqozefrlpm"
+    },
+    "categories": {
+      "auth": {
+        "ouraidwebc2651768c2651768": {}
+      }
     }
   }
 }
