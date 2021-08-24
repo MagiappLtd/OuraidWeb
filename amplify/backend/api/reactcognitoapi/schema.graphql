@@ -1,0 +1,10 @@
+type Todo @model
+@auth(rules:[
+	{allow: groups, groups:["Admin"]},
+	{allow: owner, ownerField: "usermname",operations:[read]}
+]){
+  id: ID!
+  name: String!
+  email: String!
+  description: String
+}
