@@ -6,10 +6,11 @@ function OnCognitoSignUp() {
     };
     var userPool = new AmazonCognitoIdentity.CognitoUserPool(poolData);
 
-    var username = document.getElementById("email").value;
+    var username = document.getElementById("username").value;
+    var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
 
-    userPool.signUp(username, password, null, null, function(
+    userPool.signUp(username,email, password, null, null, function(
         err,
         result
     ) {
