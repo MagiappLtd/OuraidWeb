@@ -53,7 +53,7 @@ AWS.config.credentials = new AWS.CognitoIdentityCredentials({
         console.log("refreshToken : " + refreshToken);
 
         // サインイン成功の場合、次の画面へ遷移
-        location.href = "index.html";
+        location.href = "../index.html";
       },
 
       onFailure: err => {
