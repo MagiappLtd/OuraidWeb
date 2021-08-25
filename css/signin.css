@@ -105,15 +105,15 @@ body :-ms-input-placeholder {
   font-weight: 300;
 }
 .wrapper {
-  background: #50a3a2;
-  background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  height: 400px;
-  margin-top: -200px;
-  overflow: hidden;
+    background: #50a3a2;
+    background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
+    position: absolute;
+    top: 95px;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    margin-top: -200px;
+    overflow: hidden;
 }
 .wrapper.form-success .container h1 {
   transform: translateY(85px);
