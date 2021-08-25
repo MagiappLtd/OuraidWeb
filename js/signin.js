@@ -12,8 +12,8 @@ function OnCognitoAuthenticateUser() {
         authenticationData
     );
     var poolData = {
-		UserPoolId: 'ap-northeast-1_98efD1WTS', // Your user pool id here
-        ClientId: '4tsvd1igc6qfkv5s0asbu4qsbv', // Your client id here
+        UserPoolId: 'ap-northeast-1_5tA85AbZd', // Your user pool id here
+        ClientId: '6d47bd9cp0d7tj03gvonvt0d7', // Your client id here
     };
     var userPool = new AmazonCognitoIdentity.CognitoUserPool(poolData);
     var userData = {
@@ -36,7 +36,7 @@ function OnCognitoAuthenticateUser() {
             AWS.config.region = 'ap-northeast-1';
 
             AWS.config.credentials = new AWS.CognitoIdentityCredentials({
-                IdentityPoolId: 'ap-northeast-1:fd8eaf57-29b9-4b20-9b4a-536f8ebe99ac', // your identity pool id here
+                IdentityPoolId: 'ap-northeast-1:ef9895ab-2704-4c5e-aac7-868f821f54fc', // your identity pool id here
                 Logins: {
                     // Change the key below according to the specific region your user pool is in.
                     'cognito-idp.ap-northeast-1.amazonaws.com/ap-northeast-1_98efD1WTS': result
