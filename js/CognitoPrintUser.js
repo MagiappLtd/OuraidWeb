@@ -34,12 +34,12 @@ var getUserAttribute = function(){
         cognitoUser.getSession(function(err, session) {
             if (err) {
                 console.log(err);
-                $(location).attr("href", "signin.html");
+                $(location).attr("href", "index.html");
             } else {
                 // ユーザの属性を取得
                 cognitoUser.getUserAttributes(function(err, result) {
                     if (err) {
-                        $(location).attr("href", "signin.html");
+                        $(location).attr("href", "index.html");
                     }
                     
                     // 取得した属性情報を連想配列に格納
@@ -51,6 +51,6 @@ var getUserAttribute = function(){
             }
         });
     } else {
-        $(location).attr("href", "signin.html");
+        $(location).attr("href", "index.html");
     }
 };
