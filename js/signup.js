@@ -13,10 +13,10 @@ var attributeList = [];
 $(document).ready(function() {
 		
 	// Amazon Cognito 認証情報プロバイダーの初期化
-	AWSCognito.config.region = 'ap-northeast-1'; // リージョン
-	AWSCognito.config.credentials = new AWS.CognitoIdentityCredentials({
-	    IdentityPoolId: [IDプールのID]
-	});
+	AWS.config.region = 'ap-northeast-1'; // リージョン
+AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+    IdentityPoolId: 'ap-northeast-1:ef9895ab-2704-4c5e-aac7-868f821f54fc',
+});
 		    
 	// 「Create Account」ボタン押下時
 	$("#createAccount").click(function(event) {
