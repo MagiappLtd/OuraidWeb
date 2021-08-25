@@ -1,8 +1,8 @@
 (() => {
   // ユーザープールの設定
   const poolData = {
-        UserPoolId: 'ap-northeast-1_5tA85AbZd', // Your user pool id here
-        ClientId: '6d47bd9cp0d7tj03gvonvt0d7' // Your client id here
+        UserPoolId: 'ap-northeast-1_WwnLoFfMf', // Your user pool id here
+        ClientId: '19jusin3gl62f049g3iukarni5' // Your client id here
   };
   const userPool = new AmazonCognitoIdentity.CognitoUserPool(poolData);
 
@@ -11,8 +11,9 @@
   // Amazon Cognito 認証情報プロバイダーを初期化します
 AWS.config.region = 'ap-northeast-1'; // リージョン
 AWS.config.credentials = new AWS.CognitoIdentityCredentials({
-    IdentityPoolId: 'ap-northeast-1:ef9895ab-2704-4c5e-aac7-868f821f54fc',
+    IdentityPoolId: 'ap-northeast-1:25aed12b-aa11-4c53-81c4-97c0b21d7daa',
 });
+
 
 
 
