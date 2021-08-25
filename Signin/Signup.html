@@ -8,17 +8,21 @@
   <script src="../js/signup.js"></script>
 </head>
 <body>
-  <h1>CognitoSignUp</h1>
-  <span style="display: inline-block; width: 100px;">ニックネーム</span>
-  <input type="text" id="nickname" placeholder="nickname">
-  <br/>
-	  <span style="display: inline-block; width: 100px;">メールアドレス</span>
-
-	  <input type="text" id="email" placeholder="Email Address">
-  <br/>
-  <span style="display: inline-block; width: 100px;">Password</span>
-  <input type="password" id="password" placeholder="Password">
-  <br/><br/>
-  <input type="button" value="CognitoSignUp" onclick="OnCognitoSignUp();">
+    
+    <div id="signup">
+      <h1>Sign Up</h1>
+      <form name='form-signup'>
+	      <span style="display: inline-block; width: 150px;">User ID(Email)</span>
+          <input type="text" id="email" placeholder="Email Address">
+          <br/>
+          <span style="display: inline-block; width: 150px;">nickname</span>
+          <input type="text" id="nickname" placeholder="nickname">
+          <br/>
+          <span style="display: inline-block; width: 150px;">Password</span>
+          <input type="password" id="password" placeholder="Password">
+          <br/><br/>
+        <input type="button" id="createAccount" value="Create Account">
+	  </form>
+	</div>
 </body>
 </html>
