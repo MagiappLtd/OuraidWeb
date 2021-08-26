@@ -149,48 +149,38 @@
 
 			
 			
-			
-			<form id="contact_form">
-会社名：<input type="text" name="company" value="" required /><br/>
-メールアドレス：<input type="email" name="email" value="" required /><br/>
-<input type="button" id="send" value="送　信"/>
-</form>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-var target_url = '';
- 
-$(function(){
-    $('#send').on('click', function(){
-        var company    = $('#contact_form input[name="company"]').val();
-        var email      = $('#contact_form input[name="email"]').val();
- 
-        if(window.confirm('入力内容を送信します。よろしいでしょうか？')){
-            var formdata = {
-                'company' : company,
-                'email' : email
-            };
- 
-            $.ajax({
-                type: 'POST',
-                url: target_url,
-                dataType: 'json',
-                data: formdata,
-                scriptCharset: 'utf-8',
-                cache: false
-            }).done(function(res) {
-                if (res.result==0) {
-                    alert('サーバエラーが発生しました。');
-                }
-                alert("お問い合わせ、ありがとうございます。\n送信は正常に完了しました。\n\n近日中に担当の者よりご連絡させていただきます。\n\n今後とも何卒よろしくお願いいたします。");
-                console.log(res);
-            }).fail(function(request, status, err){
-                alert('error');
-                console.log({request: request, status: status, err: err});
-            });
-        }
-    });
-});
-</script>
+ <form id="myform">
+            <!-- 名前 -->
+            <div>
+                <label for="name">名前</label>
+                <input type="text" id="name" name="name" placeholder="名前を入力してください" />
+            </div>
+
+            <!-- Eメールアドレス -->
+            <div>
+                <label for="email">E-Mail</label>
+                <input type="email" id="email" name="email" placeholder="Eメールアドレスを入力してください" />
+            </div>
+
+            <!-- 会社名 -->
+            <div>
+                <label for="company">会社</label>
+                <input type="text" id="company" name="company" placeholder="会社名を入力してください" />
+            </div>
+
+            <!-- お問合せ内容 -->
+            <div>
+                <label for="content">内容</label>
+                <textarea id="content" name="content" placeholder="お問合せ内容を入力してください" style="height:200px"></textarea>
+            </div>
+
+            <!-- 送信ボタン -->
+            <input type="button" value="登録" onclick="regist()">
+        </form>
+        <!--END フォーム領域-->
+
+        <!--メッセージ表示領域-->
+        <p id="msg"></p>
 			
 			
 			
