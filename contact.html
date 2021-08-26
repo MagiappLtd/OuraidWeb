@@ -147,6 +147,53 @@
             </div>
           </form>
 
+			
+			
+			
+			<form id="contact_form">
+会社名：<input type="text" name="company" value="" required /><br/>
+メールアドレス：<input type="email" name="email" value="" required /><br/>
+<input type="button" id="send" value="送　信"/>
+</form>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+var target_url = '';
+ 
+$(function(){
+    $('#send').on('click', function(){
+        var company    = $('#contact_form input[name="company"]').val();
+        var email      = $('#contact_form input[name="email"]').val();
+ 
+        if(window.confirm('入力内容を送信します。よろしいでしょうか？')){
+            var formdata = {
+                'company' : company,
+                'email' : email
+            };
+ 
+            $.ajax({
+                type: 'POST',
+                url: target_url,
+                dataType: 'json',
+                data: formdata,
+                scriptCharset: 'utf-8',
+                cache: false
+            }).done(function(res) {
+                if (res.result==0) {
+                    alert('サーバエラーが発生しました。');
+                }
+                alert("お問い合わせ、ありがとうございます。\n送信は正常に完了しました。\n\n近日中に担当の者よりご連絡させていただきます。\n\n今後とも何卒よろしくお願いいたします。");
+                console.log(res);
+            }).fail(function(request, status, err){
+                alert('error');
+                console.log({request: request, status: status, err: err});
+            });
+        }
+    });
+});
+</script>
+			
+			
+			
 
         </div>
 
