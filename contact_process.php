@@ -3,7 +3,7 @@
     $to = "ouraid@magiappltd.com";
     $from = $_REQUEST['email'];
     $name = $_REQUEST['name'];
-    $subject = $_REQUEST['subject'];
+    $subject = "お問い合わせ";
     $number = $_REQUEST['number'];
     $cmessage = $_REQUEST['message'];
 
