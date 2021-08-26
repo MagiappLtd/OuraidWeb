@@ -36,10 +36,10 @@ AWS.config.credentials = new AWS.CognitoIdentityCredentials({
           }
           document.getElementById("name").innerHTML =
             "ようこそ！" + currentUserData["name"] + "さん";
-          document.getElementById("role").innerHTML =
-            "Your Role is " + currentUserData["custom:role"];
-          document.getElementById("email").innerHTML =
-            "Your E-Mail is " + currentUserData["email"];
+//          document.getElementById("role").innerHTML =
+//            "Your Role is " + currentUserData["custom:role"];
+//          document.getElementById("email").innerHTML =
+//            "Your E-Mail is " + currentUserData["email"];
 
           // サインアウト処理
           const signoutButton = document.getElementById("signout");
