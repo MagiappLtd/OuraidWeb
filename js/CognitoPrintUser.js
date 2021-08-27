@@ -23,6 +23,7 @@ AWS.config.credentials = new AWS.CognitoIdentityCredentials({
       if (err) {
         console.log(err);
       //  location.href = "signin.html";
+		    document.getElementById("name").innerHTML ='<li><a class="sign_up" href="Signin/Signin.html">ログイン</a></li>';
       } else {
         // ユーザの属性を取得
         cognitoUser.getUserAttributes((err, result) => {
@@ -36,6 +37,8 @@ AWS.config.credentials = new AWS.CognitoIdentityCredentials({
           }
           document.getElementById("name").innerHTML =
             "<a href='./mypage.html'>" + currentUserData["name"] + "　マイページ</p>";
+			
+			
 //          document.getElementById("role").innerHTML =
 //            "Your Role is " + currentUserData["custom:role"];
 //          document.getElementById("email").innerHTML =
