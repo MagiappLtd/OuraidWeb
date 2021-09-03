@@ -1,196 +1,21 @@
-<!doctype html>
-<html lang="jp">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="img/favicon.png" type="image/png">
-    <title>Ouraid</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="vendors/animate-css/animate.css">
-	
-	<script src="js/jsbn.js"></script>
-<script src="js/jsbn2.js"></script>
-<script src="js/sjcl.js"></script>
-<script src="js/aws-sdk.min.js"></script>
-<script src="js/aws-cognito-sdk.min.js"></script>
-<script src="js/amazon-cognito-identity.min.js"></script>
-<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/CognitoPrintUser.js"></script>
-
-	
-    <!-- main css -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-	
-	
-</head>
-<body>
-
-	
-    <!--================Header Menu Area =================-->
-    <header class="header_area">	
-        <div class="main_menu">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav menu_nav ml-auto">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> 
-                            <li class="nav-item"><a class="nav-link" href="feature.html">Ouraidについて</a></li> 
-                            <li class="nav-item"><a class="nav-link" href="price.html">ニュース</a></li>     
-                            <li class="nav-item submenu dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">投稿</a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="feature.html">投稿一覧</a></li> 
-                                    <li class="nav-item"><a class="nav-link" href="price.html">推薦記事</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="element.html">投稿規約</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item submenu dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">克服情報</a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="blog.html">学習</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="single-blog.html">初めに　不安克服に向けて</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="single-blog.html">薬物療法</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="single-blog.html">心理療法</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="single-blog.html">病院について</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="single-blog.html">認知行動療法</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="single-blog.html">リラクゼーション法</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="single-blog.html">マインドフルネス</a></li>
-                                </ul>
-                            </li> 
-                            <li class="nav-item"><a class="nav-link" href="contact.html">お問い合わせ</a></li>
-                        </ul>
-                    </div>
-                    <div class="right-button">
-                        <ul>
-                           <!-- <li class="shop-icon"><a href="#"><i class="ti-shopping-cart-full"></i><span>0</span></a></li>-->
-							
-                                <h3 id="name"><!--　ログイン済みであれば、名前に書き換える-->
-								<li><a class="sign_up" href="Signin/Signin.html">ログイン</a></li>
-							</h3>
-
-						
-                        </ul>
-                    </div> 
-                </div>
-            </nav>
-        </div>
-    </header>
-    <!--================Header Menu Area =================-->
-	
-	
-
-
-
-
-
-    <!-- ================ start footer Area ================= -->
-    <footer class="footer-area">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
-                    <h4>Ouraid</h4>
-                    <p>Ouraidについて</p>
-                    <div class="footer-logo">
-                        <img src="img/logo.png" alt="">
-                    </div>
-                </div>
-
-				      <div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
-                    <h4>サービス</h4>
-                    <ul>
-                        <li><a href="#">マイページ</a></li>
-                        <li><a href="#">掲示板</a></li>
-                        <li><a href="#">紹介記事</a></li>
-                        <li><a href="#">克服動画コンテンツ</a></li>
-                        <li><a href="#">利用規約(作成中)</a></li>
-                    </ul>
-                </div>
-				
-                <div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
-                    <h4>運営会社</h4>
-                    <div class="footer-address">
-                        <p>株式会社魔法アプリ</p>
-                        <p>事務所所在地：埼玉県朝霞市根岸台6-1-30</p>
-                        <span>Phone : 080-4059-1943</span>
-                        <span>Email : ouraid@magiappltd.com</span>
-                    </div>
-                </div>
-
-          
-
-                <div class="col-lg-3 col-md-8 mb-4 mb-xl-0 single-footer-widget">
-                    <h4>Newsletter</h4>
-                    <p>お知らせ配信(開発中)</p>
-
-                    <div class="form-wrap" id="mc_embed_signup">
-                        <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                        method="get">
-                        <div class="input-group">
-                            <input type="email" class="form-control" name="EMAIL" placeholder="Your Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address '">
-                            <div class="input-group-append">
-                                <button class="btn click-btn" type="submit">
-                                    <i class="fab fa-telegram-plane"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div style="position: absolute; left: -5000px;">
-                            <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-                        </div>
-
-                        <div class="info"></div>
-                    </form>
-                </div>
-
-            </div>
-        </div>
-        <div class="footer-bottom row align-items-center text-center text-lg-left no-gutters">
-            <p class="footer-text m-0 col-lg-8 col-md-12"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script>   <a href="https://magiappltd.com" target="_blank">  株式会社魔法アプリ</a>	 All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>	
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-            <div class="col-lg-4 col-md-12 text-center text-lg-right footer-social">
-                <a href="#"><i class="ti-facebook"></i></a>
-                <a href="#"><i class="ti-twitter-alt"></i></a>
-                <a href="#"><i class="ti-dribbble"></i></a>
-                <a href="#"><i class="ti-linkedin"></i></a>
-            </div>
-        </div>
-    </div>
-</footer>
-<!-- ================ End footer Area ================= -->
-
-
-
-
-
-
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="js/jquery-2.2.4.min.js"></script>
-<script src="js/popper.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-<script src="js/jquery.ajaxchimp.min.js"></script>
-<script src="js/waypoints.min.js"></script>
-<script src="js/mail-script.js"></script>
-<script src="js/contact.js"></script>
-<script src="js/jquery.form.js"></script>
-<script src="js/jquery.validate.min.js"></script>
-<script src="js/mail-script.js"></script>
-<script src="js/theme.js"></script>
-</body>
-</html>
+    <!doctype html>
+    <html lang="ja">
+    <head>
+      <meta charset="UTF-8">
+      <title>HTML Sample</title>
+      <link rel="stylesheet" href="style.css">
+      <script type="text/javascript" src="sample.js"></script>
+    </head>
+    <body>
+      <div class="header">Header領域</div>
+      <div class="main">
+        <h1>見出し</h1>
+        <p>コンテンツ</p>
+        <img src="img/sample1.jpg">
+      </div>
+      <div class="footer">
+        <span>Footer領域</span>
+        <a href="#">リンク</a>
+      </div>
+    </body>
+    </html>
