@@ -29,6 +29,8 @@ AWS.config.credentials = new AWS.CognitoIdentityCredentials({
         cognitoUser.getUserAttributes((err, result) => {
           if (err) {
       //      location.href = "signin.html";
+			  document.getElementById("name").innerHTML ='<li><a class="sign_up" href="Signin/Signin.html">ログイン</a></li>';
+
           }
 
           // 取得した属性情報を連想配列に格納
@@ -57,5 +59,7 @@ AWS.config.credentials = new AWS.CognitoIdentityCredentials({
     });
   } else {
  //   location.href = "signin.html";
+	  		    document.getElementById("name").innerHTML ='<li><a class="sign_up" href="Signin/Signin.html">ログイン</a></li>';
+
   }
 })();
