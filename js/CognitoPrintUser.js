@@ -38,7 +38,7 @@ AWS.config.credentials = new AWS.CognitoIdentityCredentials({
             currentUserData[result[i].getName()] = result[i].getValue();
           }
           document.getElementById("name").innerHTML =
-            "<a href='/Mypage/Mypage.html'>" + currentUserData["name"] + "　マイページ</p>";
+            "<a href='/Mypage.html'>" + currentUserData["name"] + "　マイページ</p>";
 
 			
 //          document.getElementById("role").innerHTML =
