@@ -60,6 +60,7 @@ AWS.config.credentials = new AWS.CognitoIdentityCredentials({
         // サインイン失敗の場合、エラーメッセージを画面に表示
         console.log(err);
         message.innerHTML = err.message;
+		  alert(err.message);
       }
     });
   });
