@@ -32,6 +32,10 @@ Coded by www.creative-tim.com
   <link href="../assets/css/paper-dashboard.css?v=2.0.1" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="../assets/demo/demo.css" rel="stylesheet" />
+	
+					   <link rel="stylesheet" type="text/css" href="../TrixRichTextEditor/dist/trix.css">
+  <script type="text/javascript" src="../TrixRichTextEditor/dist/trix.js"></script>
+					  
 </head>
 
 <body class="">
@@ -135,10 +139,26 @@ Coded by www.creative-tim.com
                    <p>タイトル
 <input type="text" name="blogtitle" size="30" maxlength="30"></p>
 					  
+					  
+					  				  <form>
+										  
+										  
+										 <?php
+$alert = "<script type='text/javascript'>alert('こちらは侍エンジニアです。');</script>";
+echo $alert;
+									?>
+  <input id="X" type="hidden" name="content">
+  <trix-editor input="X"></trix-editor>
+</form>
+					  aaa
+	
+					  
+					  
                   </section>
                 </div>
               </div>
 				<div id="root"></div>
+	
             </div>
           </div>
         </div>
