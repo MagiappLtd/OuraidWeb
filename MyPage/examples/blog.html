@@ -143,10 +143,36 @@ Coded by www.creative-tim.com
 					  				  <form>
 										  
 										  
-										 <?php
-$alert = "<script type='text/javascript'>alert('こちらは侍エンジニアです。');</script>";
-echo $alert;
-									?>
+										<script>
+										  const { DynamoDBClient, CreateTableCommand } = require("@aws-sdk/client-dynamodb")
+const client = new DynamoDBClient({ region: 'ap-northeast-1' })
+
+const params = {
+  TableName: 'music',
+  AttributeDefinitions: [
+    { AttributeName: 'Artist', AttributeType: 'S' },
+    { AttributeName: 'SongTitle', AttributeType: 'S' }
+  ],
+  KeySchema: [
+    { AttributeName: 'Artist', KeyType: 'HASH' },
+    { AttributeName: 'SongTitle', KeyType: 'RANGE' }
+  ],
+  ProvisionedThroughput: {
+    ReadCapacityUnits: 5,
+    WriteCapacityUnits: 5
+  }
+}
+const command = new CreateTableCommand(params)
+
+try {
+  await client.send(command)
+} catch(err) {
+  console.log(err)
+}
+										  </script>
+										  
+										  
+										  
   <input id="X" type="hidden" name="content">
   <trix-editor input="X"></trix-editor>
 </form>
