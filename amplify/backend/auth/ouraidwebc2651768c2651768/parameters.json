@@ -1,6 +1,6 @@
 {
     "identityPoolName": "ouraidwebc2651768_identitypool_c2651768",
-    "allowUnauthenticatedIdentities": false,
+    "allowUnauthenticatedIdentities": true,
     "resourceNameTruncated": "ouraidc2651768",
     "userPoolName": "ouraidwebc2651768_userpool_c2651768",
     "autoVerifiedAttributes": [

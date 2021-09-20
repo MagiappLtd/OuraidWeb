@@ -1,0 +1,49 @@
+{
+  "paths": [
+    {
+      "name": "/addapi",
+      "lambdaFunction": "OuraidLambdaFunction",
+      "privacy": {
+        "protected": true,
+        "auth": [
+          "/POST",
+          "/GET",
+          "/PUT",
+          "/PATCH",
+          "/DELETE"
+        ],
+        "unauth": [
+          "/POST",
+          "/GET",
+          "/PUT",
+          "/PATCH",
+          "/DELETE"
+        ]
+      },
+      "policyResourceName": "/addapi"
+    }
+  ],
+  "resourceName": "OuraidAddApi",
+  "apiName": "OuraidAddApi",
+  "functionArns": [
+    {
+      "lambdaFunction": "OuraidLambdaFunction"
+    }
+  ],
+  "privacy": {
+    "auth": 1,
+    "unauth": 1,
+    "authRoleName": "amplify-ouraidweb-dev-174245-authRole",
+    "unAuthRoleName": "amplify-ouraidweb-dev-174245-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "OuraidLambdaFunction",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}

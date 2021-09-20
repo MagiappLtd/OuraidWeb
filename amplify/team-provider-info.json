@@ -14,6 +14,12 @@
     "categories": {
       "auth": {
         "ouraidwebc2651768c2651768": {}
+      },
+      "function": {
+        "OuraidLambdaFunction": {
+          "deploymentBucketName": "amplify-ouraidweb-dev-174245-deployment",
+          "s3Key": "amplify-builds/OuraidLambdaFunction-7a72735147776f437670-build.zip"
+        }
       }
     }
   }

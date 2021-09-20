@@ -1,0 +1,5 @@
+{
+    "tableName": "OuraidDB",
+    "partitionKeyName": "id",
+    "partitionKeyType": "N"
+}
